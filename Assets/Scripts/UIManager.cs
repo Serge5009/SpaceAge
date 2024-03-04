@@ -5,11 +5,13 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI focusName;
+
+    [SerializeField] TextMeshProUGUI focusNameField;
+    GameObject focusOn;
 
     void Start()
     {
-        
+        UpdateUI();
     }
 
     void Update()
@@ -19,6 +21,7 @@ public class UIManager : MonoBehaviour
 
     public void UpdateUI()
     {
-        
+        focusOn = GameManager.gameManager.focusOn;
+        focusNameField.text = focusOn.GetComponent<Planet>().planetName;
     }
 }
