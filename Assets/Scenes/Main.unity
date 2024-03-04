@@ -667,6 +667,11 @@ PrefabInstance:
       propertyPath: orbitRadius
       value: 384400
       objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: orbitalVelocity
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -769,6 +774,11 @@ PrefabInstance:
         type: 3}
       propertyPath: orbitRadius
       value: 149000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: orbitalVelocity
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}

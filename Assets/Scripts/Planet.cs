@@ -26,6 +26,10 @@ public class Planet : MonoBehaviour
 
     void Update()
     {
+    }
+
+    void FixedUpdate()
+    {
         if (orbitAround)
         {
             HandleOrbit();
@@ -47,6 +51,7 @@ public class Planet : MonoBehaviour
         else
         {
             orbitAnchor.transform.position = orbitAround.transform.position;
+            orbitAnchor.transform.Rotate(0, orbitalVelocity * Time.fixedDeltaTime, 0);
         }
     }
 
