@@ -45,12 +45,11 @@ public class CameraController : MonoBehaviour
         else if (Input.GetMouseButton(0) && lastFramePosition != null)        //  While finger is down - move relatively to the start position
         {
             Vector3 screenMove = Input.mousePosition - lastFramePosition;
-            transform.Rotate(-screenMove.y, screenMove.x, 0);
+            transform.Rotate(-screenMove.y, screenMove.x, -transform.rotation.eulerAngles.z);
 
             //Debug.Log(camMoveDirection);
         }
 
         lastFramePosition = Input.mousePosition;
-        transform.rotation.SetEulerAngles(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 0);   //  Freezing Z rotation
     }
 }
