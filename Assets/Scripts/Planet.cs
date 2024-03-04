@@ -5,6 +5,7 @@ using UnityEngine;
 public class Planet : MonoBehaviour
 {
     public string planetName;
+    public BodyClass bodyClass;
 
     public long population;
 
@@ -27,4 +28,13 @@ public class Planet : MonoBehaviour
     {
         
     }
+}
+
+public enum BodyClass
+{
+    STAR,
+    PLANET,
+    SATTELITE,
+
+    NUM_BODY_CLASSES
 }
