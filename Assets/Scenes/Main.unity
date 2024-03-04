@@ -427,6 +427,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1261424063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8060173254512094989, guid: 23226a93f1309554da02a3dcdd5b31dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4445706556355875984}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1724378354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -449,6 +455,16 @@ PrefabInstance:
         type: 3}
       propertyPath: population
       value: 15000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: orbitAround
+      value: 
+      objectReference: {fileID: 1261424063}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: orbitRadius
+      value: 384400
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
