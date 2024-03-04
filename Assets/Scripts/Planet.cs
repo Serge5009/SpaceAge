@@ -18,16 +18,40 @@ public class Planet : MonoBehaviour
     void Start()
     {
         transform.localScale = new Vector3(radius / 1000, radius / 1000, radius / 1000);
-        if(orbitAround)
-        {
-            transform.localPosition = orbitAround.transform.position + new Vector3(orbitRadius / 10000, 0 ,0);  //  Orbit distance in the game is 10 times less than real life
-        }
+        //if(orbitAround)
+        //{
+        //    transform.localPosition = orbitAround.transform.position + new Vector3(orbitRadius / 10000, 0 ,0);  //  Orbit distance in the game is 10 times less than real life
+        //}
     }
 
     void Update()
     {
-        
+        if (orbitAround)
+        {
+            HandleOrbit();
+        }
     }
+
+
+
+    GameObject orbitAnchor;
+    void HandleOrbit()
+    {
+        if(!orbitAnchor)
+        {
+            orbitAnchor = Instantiate(new GameObject(), orbitAround.transform.position, Quaternion.identity);
+            orbitAnchor.name = planetName + " container";
+            this.transform.parent = orbitAnchor.transform;
+            transform.localPosition = new Vector3(orbitRadius / 10000, 0, 0);  //  Orbit distance in the game is 10 times less than real life
+        }
+        else
+        {
+            orbitAnchor.transform.position = orbitAround.transform.position;
+        }
+    }
+
+
+
 }
 
 public enum BodyClass
