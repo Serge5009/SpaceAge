@@ -19,6 +19,11 @@ public class UIManager : MonoBehaviour
         
     }
 
+    public void GoBack()
+    {
+        GameManager.gameManager.GoBack();
+    }
+
     public void UpdateUI()
     {
         focusOn = GameManager.gameManager.focusOn;

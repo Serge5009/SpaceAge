@@ -34,6 +34,19 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void GoBack()
+    {
+        GameObject parentPlanet = focusOn.GetComponent<Planet>().orbitAround;
+        if (parentPlanet)
+            FocusOnNew(parentPlanet);
+    }
+
+    public void FocusOnNew(GameObject newFocus)
+    {
+        focusOn = newFocus;
+        UImanager.UpdateUI();
+    }
+
     void LateUpdate()
     {
         camObject.transform.position = focusOn.transform.position;
