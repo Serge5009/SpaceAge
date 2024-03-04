@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    [Range(0, 1.0f)]
+    public float sensitivity;
+
 
     //  Input tracking
     Vector3 touchStart;
@@ -45,6 +48,7 @@ public class CameraController : MonoBehaviour
         else if (Input.GetMouseButton(0) && lastFramePosition != null)        //  While finger is down - move relatively to the start position
         {
             Vector3 screenMove = Input.mousePosition - lastFramePosition;
+            screenMove *= sensitivity;
             transform.Rotate(-screenMove.y, screenMove.x, -transform.rotation.eulerAngles.z);
 
             //Debug.Log(camMoveDirection);
