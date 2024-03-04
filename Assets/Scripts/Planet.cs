@@ -6,7 +6,7 @@ public class Planet : MonoBehaviour
 {
     public string planetName;
 
-    public int population;
+    public long population;
 
     public float radius;
 
@@ -14,7 +14,7 @@ public class Planet : MonoBehaviour
 
     void Start()
     {
-        
+        transform.localScale = new Vector3(radius / 1000, radius / 1000, radius / 1000);
     }
 
     void Update()
