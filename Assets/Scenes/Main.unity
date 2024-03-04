@@ -123,6 +123,114 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &34375388
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 910950435002611592, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0b51f27c2642cd04dab7cbb7e5078c2a, type: 2}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: radius
+      value: 3389
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: bodyClass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetName
+      value: Mars
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: population
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: orbitAround
+      value: 
+      objectReference: {fileID: 450804450}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: orbitRadius
+      value: 228000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: orbitalVelocity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060173254512094989, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_Name
+      value: Mars
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 23226a93f1309554da02a3dcdd5b31dd, type: 3}
 --- !u!1 &197677242
 GameObject:
   m_ObjectHideFlags: 0
@@ -2166,7 +2274,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7955017141efb8445b4e30bd54786536, type: 2}
+      objectReference: {fileID: 2100000, guid: 559a4cfbdee53db409f063472294fdc2, type: 2}
     - target: {fileID: 2822169020294785845, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: m_IsActive
@@ -2644,7 +2752,7 @@ PrefabInstance:
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 4.65
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -2709,6 +2817,7 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 621536921}
   - {fileID: 4445706556355875984}
+  - {fileID: 34375388}
   - {fileID: 1724378354}
   - {fileID: 197677243}
   - {fileID: 680231267}
