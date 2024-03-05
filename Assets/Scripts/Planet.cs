@@ -55,7 +55,7 @@ public class Planet : MonoBehaviour
             this.transform.parent = orbitAnchor.transform;
 
             //  Calculate orbit     //  Real distance between planets is insane, so we'll have to reduce it
-            float inGameDistance = orbitRadius / 200000;    //  Our planets are 200 times closer to each other than in real life
+            float inGameDistance = orbitRadius / 500000;    //  Our planets are 500 times closer to each other than in real life
 
             inGameDistance += orbitAround.GetComponent<Planet>().radius / 1000;
 
