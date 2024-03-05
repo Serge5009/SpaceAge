@@ -50,7 +50,7 @@ public class CameraController : MonoBehaviour
 
             //Zoom(difference * zoomSens);
         }
-        else if (Input.GetMouseButton(0) && lastFramePosition != null)        //  While finger is down - move relatively to the start position
+        else if (Input.GetMouseButton(0) && lastFramePosition != Vector3.zero)        //  While finger is down - move relatively to the start position
         {
             Vector3 screenMove = Input.mousePosition - lastFramePosition;
             screenMove *= sensitivity;
@@ -60,7 +60,8 @@ public class CameraController : MonoBehaviour
         }
 
         lastFramePosition = Input.mousePosition;
-
+        if(!Input.GetMouseButton(0))
+            lastFramePosition = Vector3.zero;
 
         //  Apply zoom
         transform.GetChild(0).localPosition = baseCameraPosition * zoomLevel;

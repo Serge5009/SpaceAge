@@ -53,12 +53,21 @@ public class Planet : MonoBehaviour
             orbitAnchor = Instantiate(new GameObject(), orbitAround.transform.position, Quaternion.identity);
             orbitAnchor.name = planetName + " container";
             this.transform.parent = orbitAnchor.transform;
-            transform.localPosition = new Vector3(orbitRadius / 10000, 0, 0);  //  Orbit distance in the game is 10 times less than real life
+
+            //  Calculate orbit     //  Real distance between planets is insane, so we'll have to reduce it
+            float inGameDistance = orbitRadius / 500000;    //  Our planets are 500 times closer to each other than in real life
+            inGameDistance += orbitAround.GetComponent<Planet>().radius / 1900;
+            if (bodyClass == BodyClass.SATTELITE)
+                inGameDistance *= 2;
+            transform.localPosition = new Vector3(inGameDistance, 0, 0);
+
+            //  Random orbit position
+            orbitAnchor.transform.Rotate(0, Random.Range(0, 360f), 0);
         }
         else
         {
             orbitAnchor.transform.position = orbitAround.transform.position;
-            orbitAnchor.transform.Rotate(0, orbitalVelocity * Time.fixedDeltaTime, 0);
+            orbitAnchor.transform.Rotate(0, -orbitalVelocity * Time.fixedDeltaTime, 0);
         }
     }
 
@@ -71,6 +80,7 @@ public enum BodyClass
     STAR,
     PLANET,
     SATTELITE,
+    SPACE_STATION,
 
     NUM_BODY_CLASSES
 }
