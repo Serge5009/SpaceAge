@@ -7,6 +7,8 @@ public class CameraController : MonoBehaviour
     [Range(0, 1.0f)]
     public float sensitivity;
 
+    public float zoomLevel = 3.0f;
+    [SerializeField] Vector3 baseCameraPosition;
 
     //  Input tracking
     Vector3 touchStart;
@@ -55,7 +57,14 @@ public class CameraController : MonoBehaviour
         }
 
         lastFramePosition = Input.mousePosition;
+
+
+        //  Apply zoom
+        transform.GetChild(0).localPosition = baseCameraPosition * zoomLevel;
     }
 
+    public void UpdateCamera()
+    {
 
+    }
 }
