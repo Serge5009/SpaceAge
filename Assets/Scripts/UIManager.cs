@@ -37,6 +37,7 @@ public class UIManager : MonoBehaviour
     public void SpawnInfo()
     {
         GameObject spawnedPanel = Instantiate(infoPanel, transform);
+        spawnedPanel.GetComponent<InfoPanel>().UpdateInfo(focusOn);
     }
 
     public void UpdateUI()

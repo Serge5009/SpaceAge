@@ -363,6 +363,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2997b94eae33d44887035282d83f73c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameField: {fileID: 7939406863232283494}
+  typeField: {fileID: 3502933127590440245}
+  radField: {fileID: 1824650395020679928}
+  oRadField: {fileID: 98480581378926240}
+  massField: {fileID: 850295867106056525}
+  volField: {fileID: 647769526996806081}
+  gField: {fileID: 1445866331480971186}
+  densField: {fileID: 7102408754923163345}
 --- !u!1 &2843081106628900968
 GameObject:
   m_ObjectHideFlags: 0
