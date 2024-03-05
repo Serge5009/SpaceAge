@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 410087040}
-  m_IndirectSpecularColor: {r: 0.00043870823, g: 0.0006069326, b: 0.0010881398, a: 1}
+  m_IndirectSpecularColor: {r: 0.00068556424, g: 0.0007244696, b: 0.0012645333, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,7 +135,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0b51f27c2642cd04dab7cbb7e5078c2a, type: 2}
+      objectReference: {fileID: 2100000, guid: 0b596234dc45b914c9fa0183b215e8dc, type: 2}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: radius
@@ -533,7 +533,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0b51f27c2642cd04dab7cbb7e5078c2a, type: 2}
+      objectReference: {fileID: 2100000, guid: a6ec49670efc6924995c631102a59124, type: 2}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: radius
@@ -641,7 +641,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0b51f27c2642cd04dab7cbb7e5078c2a, type: 2}
+      objectReference: {fileID: 2100000, guid: a6ec49670efc6924995c631102a59124, type: 2}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: radius
@@ -1415,7 +1415,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0b51f27c2642cd04dab7cbb7e5078c2a, type: 2}
+      objectReference: {fileID: 2100000, guid: 2c44931c2e7836247a1aad6d39ae9da5, type: 2}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: radius
@@ -1505,6 +1505,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Saturn
+      objectReference: {fileID: 0}
+    - target: {fileID: 8579024006196833580, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: spinX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8579024006196833580, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: spinZ
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123880687877466242, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123880687877466242, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123880687877466242, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123880687877466242, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2028,7 +2058,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0b51f27c2642cd04dab7cbb7e5078c2a, type: 2}
+      objectReference: {fileID: 2100000, guid: 2c44931c2e7836247a1aad6d39ae9da5, type: 2}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: radius
@@ -2132,6 +2162,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 910950435002611592, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 559a4cfbdee53db409f063472294fdc2, type: 2}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: radius
@@ -2223,7 +2258,8 @@ PrefabInstance:
       value: Mercury
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2822169020294785845, guid: 23226a93f1309554da02a3dcdd5b31dd, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23226a93f1309554da02a3dcdd5b31dd, type: 3}
@@ -3294,6 +3330,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 910950435002611592, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c44931c2e7836247a1aad6d39ae9da5, type: 2}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: radius
