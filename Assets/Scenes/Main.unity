@@ -1597,6 +1597,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 910950435002611592, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 910950435002611592, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d6187f5710fe0cb4291c90c559ea583c, type: 2}
@@ -1742,6 +1747,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   focusOn: {fileID: 621874025}
+  localStar: {fileID: 450804450}
+  dirLight: {fileID: 410087039}
   UImanager: {fileID: 1782554059}
   camObject: {fileID: 197677242}
 --- !u!4 &680231267
@@ -2157,7 +2164,7 @@ PrefabInstance:
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -8.46
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -4914,6 +4921,8 @@ GameObject:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 680231267}
+  - {fileID: 197677243}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 621536921}
@@ -4928,7 +4937,5 @@ SceneRoots:
   - {fileID: 213495883}
   - {fileID: 268319871}
   - {fileID: 1007976931}
-  - {fileID: 197677243}
-  - {fileID: 680231267}
   - {fileID: 1782554058}
   - {fileID: 1617979280}
