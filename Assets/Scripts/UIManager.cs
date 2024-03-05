@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     GameObject focusOn;
 
     [SerializeField] TMP_Dropdown forwardSelector;
+    [SerializeField] GameObject infoPanel;
 
     void Start()
     {
@@ -31,6 +32,11 @@ public class UIManager : MonoBehaviour
         if (childIndex < 0)
             return;
         GameManager.gameManager.FocusOnNew(focusOn.GetComponent<Planet>().orbits[childIndex]);
+    }
+
+    public void SpawnInfo()
+    {
+        GameObject spawnedPanel = Instantiate(infoPanel, transform);
     }
 
     public void UpdateUI()
