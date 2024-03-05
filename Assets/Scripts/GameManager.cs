@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
     }
 
     public GameObject focusOn;  //  Space body the camera and UI should focus on
+    public GameObject localStar;
+    public GameObject dirLight;
+
     public UIManager UImanager;
 
     [SerializeField] GameObject camObject;
@@ -31,7 +34,16 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        
+        if (focusOn == localStar)
+        {
+            dirLight.transform.rotation = camObject.transform.rotation;
+        }
+        else
+        {
+            dirLight.transform.position = localStar.transform.position;
+            dirLight.transform.LookAt(focusOn.transform.position); 
+        }
+
     }
 
     public void GoBack()
@@ -48,8 +60,4 @@ public class GameManager : MonoBehaviour
         camObject.GetComponent<CameraController>().UpdateCamera();
     }
 
-    void LateUpdate()
-    {
-        camObject.transform.position = focusOn.transform.position;
-    }
 }
