@@ -20,7 +20,11 @@ public class Planet : MonoBehaviour
 
     void Start()
     {
-        transform.localScale = new Vector3(radius / 1000, radius / 1000, radius / 1000);
+        float ingameScale = radius / 1000;  //  1 unit = 1000km
+        if (bodyClass == BodyClass.STAR)
+            ingameScale /= 2;               //  Cut star radius in half
+
+        transform.localScale = new Vector3(ingameScale, ingameScale, ingameScale);
 
         if(orbitAround)
         {
