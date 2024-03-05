@@ -1642,7 +1642,7 @@ PrefabInstance:
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: radius
-      value: 696340
+      value: 695700
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -4565,6 +4565,7 @@ MonoBehaviour:
   bodyClass: 3
   population: 15
   radius: 500
+  volume: 0
   orbitAround: {fileID: 1261424063}
   orbitRadius: 300000
   orbitalVelocity: 16

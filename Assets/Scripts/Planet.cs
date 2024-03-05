@@ -9,7 +9,8 @@ public class Planet : MonoBehaviour
 
     public long population;
 
-    public float radius;
+    public float radius;    //  In KM
+    public decimal volume;     //  In 1kk KM^3
 
     public GameObject orbitAround;
     Planet parentPlanet;
@@ -33,6 +34,15 @@ public class Planet : MonoBehaviour
                 parentPlanet.orbits.Add(gameObject);
         }
 
+
+        RecalculateStats();
+    }
+
+    void RecalculateStats()
+    {
+        volume = (decimal)Mathf.Pow(radius, 3) * (decimal)4.1888 / (decimal)1000000 ;
+
+        Debug.Log(planetName + "\t" + population + "\n" + radius + "\t" + volume);
     }
 
     void Update()
