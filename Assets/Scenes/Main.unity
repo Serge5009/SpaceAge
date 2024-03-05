@@ -148,6 +148,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
+      propertyPath: density
+      value: 1.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
       propertyPath: bodyClass
       value: 1
       objectReference: {fileID: 0}
@@ -258,6 +263,11 @@ PrefabInstance:
         type: 3}
       propertyPath: radius
       value: 3389
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: density
+      value: 3.9
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -560,6 +570,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
+      propertyPath: density
+      value: 1.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
       propertyPath: bodyClass
       value: 1
       objectReference: {fileID: 0}
@@ -670,6 +685,11 @@ PrefabInstance:
         type: 3}
       propertyPath: radius
       value: 24800
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: density
+      value: 1.64
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -1452,6 +1472,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
+      propertyPath: density
+      value: 0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
       propertyPath: bodyClass
       value: 1
       objectReference: {fileID: 0}
@@ -1643,6 +1668,11 @@ PrefabInstance:
         type: 3}
       propertyPath: radius
       value: 695700
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: density
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -2168,6 +2198,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
+      propertyPath: density
+      value: 1.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
       propertyPath: bodyClass
       value: 1
       objectReference: {fileID: 0}
@@ -2273,6 +2308,11 @@ PrefabInstance:
         type: 3}
       propertyPath: radius
       value: 2440
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: density
+      value: 5.45
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -3140,6 +3180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
+      propertyPath: density
+      value: 3.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
       propertyPath: bodyClass
       value: 2
       objectReference: {fileID: 0}
@@ -3637,6 +3682,11 @@ PrefabInstance:
         type: 3}
       propertyPath: radius
       value: 6052
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: density
+      value: 5.24
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -4419,6 +4469,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
+      propertyPath: density
+      value: 5.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
       propertyPath: bodyClass
       value: 1
       objectReference: {fileID: 0}
@@ -4565,11 +4620,11 @@ MonoBehaviour:
   bodyClass: 3
   population: 15
   radius: 500
-  volume: 0
   orbitAround: {fileID: 1261424063}
   orbitRadius: 300000
   orbitalVelocity: 16
   orbits: []
+  density: 5
 --- !u!114 &5234227417523301479
 MonoBehaviour:
   m_ObjectHideFlags: 0
