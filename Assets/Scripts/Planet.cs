@@ -21,7 +21,7 @@ public class Planet : MonoBehaviour
 
     public List<GameObject> orbits;
 
-    [SerializeField] float density = 5;     //  In g/cm^3
+    public float density = 5;     //  In g/cm^3
 
     void Start()
     {

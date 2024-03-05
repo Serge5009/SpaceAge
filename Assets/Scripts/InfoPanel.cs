@@ -23,6 +23,21 @@ public class InfoPanel : MonoBehaviour
 
     void Update()
     {
+        radField.text = "r = " + currentPlanet.radius.ToString("F0") + "km";
+        oRadField.text = "Orbit - " + currentPlanet.orbitRadius.ToString("F0") + "km";
+        massField.text = "m = " + currentPlanet.mass.ToString("F0") + "B T";
+        volField.text = "V = " + currentPlanet.volume.ToString("F0") + "M km^3";
+        gField.text = "g = " + currentPlanet.gAcc.ToString("F2") + "m/s^2";
+        densField.text = "density - " + currentPlanet.density.ToString("F1") + "g/cm^3";
+
+        if (currentPlanet.bodyClass == BodyClass.SPACE_STATION)
+        {
+            radField.text = "";
+            massField.text = "";
+            volField.text = "";
+            gField.text = "g = 0m/s^2";
+            densField.text = "";
+        }
 
         if (Input.GetMouseButtonUp(0))
             Destroy(gameObject);
