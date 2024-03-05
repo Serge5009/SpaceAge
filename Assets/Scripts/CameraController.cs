@@ -9,6 +9,8 @@ public class CameraController : MonoBehaviour
 
     [Range(0, 1.0f)]
     public float sensitivity;
+    [Range(0, 1.0f)]
+    public float zoomSensitivity;
 
     public float zoomLevel = 3.0f;
     [SerializeField] Vector3 baseCameraPosition;
@@ -21,10 +23,12 @@ public class CameraController : MonoBehaviour
 
     //  Camera data
     [SerializeField] float locationLerp;
+    [SerializeField] float zoomLerp;
     [SerializeField] float rotationLerp;
     Vector3 targetLocation;
     bool lerpForLocation = false;
     float locationLerpTimer;
+    float targetZoom;
     Quaternion targetRotation;
 
     void Start()
@@ -43,20 +47,19 @@ public class CameraController : MonoBehaviour
         }
         if (Input.touchCount == 2)
         {
-            //  Zoom code from the other project
+            //  Zoom code from an old project   (transportation game)
+            Touch t0 = Input.GetTouch(0);
+            Touch t1 = Input.GetTouch(1);
 
-            //Touch t0 = Input.GetTouch(0);
-            //Touch t1 = Input.GetTouch(1);
+            Vector2 t0OldPos = t0.position - t0.deltaPosition;
+            Vector2 t1OldPos = t1.position - t1.deltaPosition;
 
-            //Vector2 t0OldPos = t0.position - t0.deltaPosition;
-            //Vector2 t1OldPos = t1.position - t1.deltaPosition;
+            float newDist = Vector2.Distance(t0.position, t1.position);
+            float oldDist = Vector2.Distance(t0OldPos, t1OldPos);
 
-            //float newDist = Vector2.Distance(t0.position, t1.position);
-            //float oldDist = Vector2.Distance(t0OldPos, t1OldPos);
+            float difference = newDist - oldDist;
 
-            //float difference = newDist - oldDist;
-
-            //Zoom(difference * zoomSens);
+            targetZoom += difference;
         }
         else if (Input.GetMouseButton(0) && lastFramePosition != Vector3.zero)        //  While finger is down - move relatively to the start position
         {
@@ -70,9 +73,6 @@ public class CameraController : MonoBehaviour
         lastFramePosition = Input.mousePosition;
         if(!Input.GetMouseButton(0))
             lastFramePosition = Vector3.zero;
-
-        //  Apply zoom
-        transform.GetChild(0).localPosition = baseCameraPosition * zoomLevel;
     }
 
     private void LateUpdate()
@@ -87,7 +87,10 @@ public class CameraController : MonoBehaviour
         locationLerpTimer -= Time.deltaTime;
         if (locationLerpTimer <= 0.0f)
             lerpForLocation = false;
-        
+
+        //  Zoom lerp
+        zoomLevel = Mathf.Lerp(zoomLevel, targetZoom, zoomLerp * Time.deltaTime);
+        transform.GetChild(0).localPosition = baseCameraPosition * zoomLevel;
     }
 
     void StartLocationLerp()
@@ -103,6 +106,6 @@ public class CameraController : MonoBehaviour
 
         StartLocationLerp();
 
-        zoomLevel = focusOn.GetComponent<Planet>().radius / 2000;
+        targetZoom = focusOn.GetComponent<Planet>().radius / 2000;
     }
 }
