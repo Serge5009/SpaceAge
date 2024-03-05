@@ -14,10 +14,18 @@ public class CameraController : MonoBehaviour
     [SerializeField] Vector3 baseCameraPosition;
 
     //  Input tracking
-    Vector3 touchStart;
-    Vector3 touchStartLocal;
+    //Vector3 touchStart;
+    //Vector3 touchStartLocal;
     Vector3 lastFramePosition;
 
+
+    //  Camera data
+    [SerializeField] float locationLerp;
+    [SerializeField] float rotationLerp;
+    Vector3 targetLocation;
+    bool lerpForLocation = false;
+    float locationLerpTimer;
+    Quaternion targetRotation;
 
     void Start()
     {
@@ -67,10 +75,33 @@ public class CameraController : MonoBehaviour
         transform.GetChild(0).localPosition = baseCameraPosition * zoomLevel;
     }
 
+    private void LateUpdate()
+    {
+        //  Location lerp
+        targetLocation = focusOn.transform.position;
+
+        if (lerpForLocation)
+            transform.position = Vector3.Lerp(transform.position, targetLocation, locationLerp * Time.deltaTime);
+        else
+            transform.position = targetLocation;
+        locationLerpTimer -= Time.deltaTime;
+        if (locationLerpTimer <= 0.0f)
+            lerpForLocation = false;
+        
+    }
+
+    void StartLocationLerp()
+    {
+        locationLerpTimer = 2.5f / locationLerp;
+        lerpForLocation = true;
+    }
+
     public void UpdateCamera()
     {
         //  Update data
         focusOn = GameManager.gameManager.focusOn;
+
+        StartLocationLerp();
 
         zoomLevel = focusOn.GetComponent<Planet>().radius / 2000;
     }

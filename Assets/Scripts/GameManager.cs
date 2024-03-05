@@ -48,8 +48,4 @@ public class GameManager : MonoBehaviour
         camObject.GetComponent<CameraController>().UpdateCamera();
     }
 
-    void LateUpdate()
-    {
-        camObject.transform.position = focusOn.transform.position;
-    }
 }

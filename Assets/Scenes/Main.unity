@@ -521,6 +521,8 @@ MonoBehaviour:
   sensitivity: 0.1
   zoomLevel: 3
   baseCameraPosition: {x: 0, y: 1, z: -5}
+  locationLerp: 5
+  rotationLerp: 1
 --- !u!1001 &213495883
 PrefabInstance:
   m_ObjectHideFlags: 0
