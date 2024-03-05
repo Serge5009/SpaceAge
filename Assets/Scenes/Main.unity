@@ -169,7 +169,7 @@ PrefabInstance:
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: orbitalVelocity
-      value: 5
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -277,7 +277,7 @@ PrefabInstance:
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: orbitalVelocity
-      value: 5
+      value: 0.52
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -562,12 +562,12 @@ PrefabInstance:
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: orbitRadius
-      value: 4.497e+9
+      value: 2.871e+9
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: orbitalVelocity
-      value: 5
+      value: 0.011
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -675,7 +675,7 @@ PrefabInstance:
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: orbitalVelocity
-      value: 5
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -1449,7 +1449,7 @@ PrefabInstance:
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: orbitalVelocity
-      value: 5
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -2092,7 +2092,7 @@ PrefabInstance:
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: orbitalVelocity
-      value: 5
+      value: 0.004
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -2200,7 +2200,7 @@ PrefabInstance:
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: orbitalVelocity
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -3064,7 +3064,7 @@ PrefabInstance:
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: orbitalVelocity
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -3368,7 +3368,7 @@ PrefabInstance:
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: orbitalVelocity
-      value: 5
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -3471,7 +3471,7 @@ PrefabInstance:
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: orbitalVelocity
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6973043652657000925, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}

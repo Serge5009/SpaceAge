@@ -56,16 +56,16 @@ public class Planet : MonoBehaviour
 
             //  Calculate orbit     //  Real distance between planets is insane, so we'll have to reduce it
             float inGameDistance = orbitRadius / 500000;    //  Our planets are 500 times closer to each other than in real life
-
             inGameDistance += orbitAround.GetComponent<Planet>().radius / 1000;
+            transform.localPosition = new Vector3(inGameDistance, 0, 0);
 
-
-                transform.localPosition = new Vector3(inGameDistance, 0, 0);
+            //  Random orbit position
+            orbitAnchor.transform.Rotate(0, Random.Range(0, 360f), 0);
         }
         else
         {
             orbitAnchor.transform.position = orbitAround.transform.position;
-            orbitAnchor.transform.Rotate(0, orbitalVelocity * Time.fixedDeltaTime, 0);
+            orbitAnchor.transform.Rotate(0, -orbitalVelocity * Time.fixedDeltaTime, 0);
         }
     }
 
