@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    GameObject focusOn;
+
+
     [Range(0, 1.0f)]
     public float sensitivity;
 
@@ -65,6 +68,9 @@ public class CameraController : MonoBehaviour
 
     public void UpdateCamera()
     {
+        //  Update data
+        focusOn = GameManager.gameManager.focusOn;
 
+        zoomLevel = focusOn.GetComponent<Planet>().radius / 2000;
     }
 }

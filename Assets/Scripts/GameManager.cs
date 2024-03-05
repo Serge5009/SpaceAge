@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
+        FocusOnNew(focusOn);
     }
 
     void Update()
@@ -39,14 +39,13 @@ public class GameManager : MonoBehaviour
         GameObject parentPlanet = focusOn.GetComponent<Planet>().orbitAround;
         if (parentPlanet)
             FocusOnNew(parentPlanet);
-
-        camObject.GetComponent<CameraController>().UpdateCamera();
     }
 
     public void FocusOnNew(GameObject newFocus)
     {
         focusOn = newFocus;
         UImanager.UpdateUI();
+        camObject.GetComponent<CameraController>().UpdateCamera();
     }
 
     void LateUpdate()
