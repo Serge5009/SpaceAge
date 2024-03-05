@@ -12,16 +12,23 @@ public class Planet : MonoBehaviour
     public float radius;
 
     public GameObject orbitAround;
+    Planet parentPlanet;
     public float orbitRadius;
     public float orbitalVelocity;
+
+    public List<GameObject> orbits;
 
     void Start()
     {
         transform.localScale = new Vector3(radius / 1000, radius / 1000, radius / 1000);
-        //if(orbitAround)
-        //{
-        //    transform.localPosition = orbitAround.transform.position + new Vector3(orbitRadius / 10000, 0 ,0);  //  Orbit distance in the game is 10 times less than real life
-        //}
+
+        if(orbitAround)
+        {
+            parentPlanet = orbitAround.GetComponent<Planet>();  //  Added itself to parent's children if needed
+            if (!parentPlanet.orbits.Contains(gameObject))  
+                parentPlanet.orbits.Add(gameObject);
+        }
+
     }
 
     void Update()
