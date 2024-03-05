@@ -53,7 +53,14 @@ public class Planet : MonoBehaviour
             orbitAnchor = Instantiate(new GameObject(), orbitAround.transform.position, Quaternion.identity);
             orbitAnchor.name = planetName + " container";
             this.transform.parent = orbitAnchor.transform;
-            transform.localPosition = new Vector3(orbitRadius / 10000, 0, 0);  //  Orbit distance in the game is 10 times less than real life
+
+            //  Calculate orbit     //  Real distance between planets is insane, so we'll have to reduce it
+            float inGameDistance = orbitRadius / 200000;    //  Our planets are 200 times closer to each other than in real life
+
+            inGameDistance += orbitAround.GetComponent<Planet>().radius / 1000;
+
+
+                transform.localPosition = new Vector3(inGameDistance, 0, 0);
         }
         else
         {
