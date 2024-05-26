@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7772052010964178385}
   - component: {fileID: 7523298809993194333}
   - component: {fileID: 6930295480032249100}
+  - component: {fileID: 6244337531249397787}
   m_Layer: 5
   m_Name: ResourceUIAmount
   m_TagString: Untagged
@@ -122,6 +123,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6244337531249397787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810823308781457482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89457f44ba9f65a48bd0d563c51f97a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedPlanet: {fileID: 0}
+  isReserve: 0
+  resType: 6
+  valueInUI: {fileID: 3247595368175981277}
 --- !u!1 &6603717106603594698
 GameObject:
   m_ObjectHideFlags: 0

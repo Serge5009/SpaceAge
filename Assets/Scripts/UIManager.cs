@@ -74,9 +74,17 @@ public class UIManager : MonoBehaviour
 
 
         //  Update resources
+        int resourceCounter = 0;
         foreach (long resource in focusedEconomy.planetReserves)
         {
-            Instantiate(resourceUIPrefab, topArea1.transform);
+            GameObject newResTab = Instantiate(resourceUIPrefab, topArea1.transform);
+            ResourceUI newResUI = newResTab.GetComponent<ResourceUI>();
+
+            newResUI.linkedPlanet = focusedEconomy;
+            newResUI.resType = (RES)resourceCounter;
+            newResUI.isReserve = true;
+
+            resourceCounter++;
         }
     }
 }

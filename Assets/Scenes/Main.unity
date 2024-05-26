@@ -5788,6 +5788,36 @@ PrefabInstance:
       propertyPath: planetReserves.Array.size
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetReserves.Array.data[0]
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetReserves.Array.data[1]
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetReserves.Array.data[2]
+      value: 90000
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetReserves.Array.data[3]
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetReserves.Array.data[4]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetReserves.Array.data[5]
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: radius
