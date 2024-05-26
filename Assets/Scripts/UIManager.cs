@@ -11,6 +11,10 @@ public class UIManager : MonoBehaviour
     //  Major data
     [SerializeField] TMP_Dropdown forwardSelector;
     [SerializeField] GameObject infoPanel;
+    [SerializeField] GameObject resourceUIPrefab;
+
+    [SerializeField] GameObject topArea1;
+    [SerializeField] GameObject topArea2;
 
     //  Stat & resources
     [SerializeField] TextMeshProUGUI population;
@@ -68,5 +72,11 @@ public class UIManager : MonoBehaviour
         }
         forwardSelector.AddOptions(optionsToAdd);
 
+
+        //  Update resources
+        foreach (long resource in focusedEconomy.planetReserves)
+        {
+            Instantiate(resourceUIPrefab, topArea1.transform);
+        }
     }
 }

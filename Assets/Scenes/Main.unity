@@ -1960,6 +1960,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   population: 0
+  planetReserves: 
+  localResources: 
 --- !u!1001 &621536921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3663,6 +3665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   population: 0
+  planetReserves: 
+  localResources: 
 --- !u!1 &1451711578
 GameObject:
   m_ObjectHideFlags: 0
@@ -4480,6 +4484,10 @@ MonoBehaviour:
   forwardSelector: {fileID: 289709879}
   infoPanel: {fileID: 1251049013433970653, guid: 26ebb12d31da03045a7d26148093cc09,
     type: 3}
+  resourceUIPrefab: {fileID: 1810823308781457482, guid: 01a90222742f2bd42ad64f0196f609a0,
+    type: 3}
+  topArea1: {fileID: 672161451}
+  topArea2: {fileID: 321070557}
   population: {fileID: 1287864595}
 --- !u!1 &1903187047
 GameObject:
@@ -5770,6 +5778,16 @@ PrefabInstance:
       propertyPath: population
       value: 8000000000
       objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: localResources.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetReserves.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: radius
@@ -5963,6 +5981,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   population: 0
+  planetReserves: 
+  localResources: 
 --- !u!23 &5462330431411337869
 MeshRenderer:
   m_ObjectHideFlags: 0
