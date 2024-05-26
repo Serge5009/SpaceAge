@@ -6,9 +6,14 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     GameObject focusOn;
+    PlanetEconomy focusedEconomy;
 
+    //  Major data
     [SerializeField] TMP_Dropdown forwardSelector;
     [SerializeField] GameObject infoPanel;
+
+    //  Stat & resources
+    [SerializeField] TextMeshProUGUI population;
 
     void Start()
     {
@@ -17,7 +22,7 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        
+        population.text = focusedEconomy.population.ToString("F0");
     }
 
     public void GoBack()
@@ -44,6 +49,7 @@ public class UIManager : MonoBehaviour
     {
         //  Update data
         focusOn = GameManager.gameManager.focusOn;
+        focusedEconomy = focusOn.GetComponent<PlanetEconomy>();
 
         //  Update forward options
         forwardSelector.ClearOptions();
