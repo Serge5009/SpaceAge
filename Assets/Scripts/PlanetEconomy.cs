@@ -20,8 +20,12 @@ public class PlanetEconomy : MonoBehaviour
 
 public enum RES
 {
-    HYDROGEN,
-    HELIUM,
+    GASSES,
+    WATER,
     METALS,
+    CARBON,
+    PRECIOUS,
+    RADIOACTIVE,
 
+    NUM_RES
 }
