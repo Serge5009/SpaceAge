@@ -27,6 +27,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject camObject;
 
+    public List<string> resourceNames;
+    public List<Sprite> resourceIcon;
+
     void Start()
     {
         FocusOnNew(focusOn);
@@ -60,4 +63,17 @@ public class GameManager : MonoBehaviour
         camObject.GetComponent<CameraController>().UpdateCamera();
     }
 
+}
+
+
+public enum RES
+{
+    GASSES,
+    WATER,
+    METALS,
+    CARBON,
+    PRECIOUS,
+    RADIOACTIVE,
+
+    NUM_RES
 }

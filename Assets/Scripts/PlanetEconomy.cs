@@ -20,14 +20,3 @@ public class PlanetEconomy : MonoBehaviour
     }
 }
 
-public enum RES
-{
-    GASSES,
-    WATER,
-    METALS,
-    CARBON,
-    PRECIOUS,
-    RADIOACTIVE,
-
-    NUM_RES
-}

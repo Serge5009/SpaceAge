@@ -2251,6 +2251,8 @@ MonoBehaviour:
   dirLight: {fileID: 410087039}
   UImanager: {fileID: 1782554059}
   camObject: {fileID: 197677242}
+  resourceNames: []
+  resourceIcon: []
 --- !u!4 &680231267
 Transform:
   m_ObjectHideFlags: 0
@@ -5790,6 +5792,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
+      propertyPath: localResources.Array.data[0]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: localResources.Array.data[1]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: localResources.Array.data[2]
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: localResources.Array.data[3]
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: localResources.Array.data[4]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: localResources.Array.data[5]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
       propertyPath: planetReserves.Array.data[0]
       value: 1000
       objectReference: {fileID: 0}
@@ -5811,7 +5843,7 @@ PrefabInstance:
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: planetReserves.Array.data[4]
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}

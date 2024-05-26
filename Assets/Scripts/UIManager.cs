@@ -74,9 +74,24 @@ public class UIManager : MonoBehaviour
 
 
         //  Update resources
+        foreach (Transform tile in topArea1.transform)
+        {
+            Destroy(tile.gameObject);
+        }
+        foreach (Transform tile in topArea2.transform)
+        {
+            Destroy(tile.gameObject);
+        }
+
         int resourceCounter = 0;
         foreach (long resource in focusedEconomy.planetReserves)
         {
+            if(resource <= 0)
+            {
+                resourceCounter++;
+                continue;
+            }
+
             GameObject newResTab = Instantiate(resourceUIPrefab, topArea1.transform);
             ResourceUI newResUI = newResTab.GetComponent<ResourceUI>();
 
@@ -86,5 +101,19 @@ public class UIManager : MonoBehaviour
 
             resourceCounter++;
         }
+
+        resourceCounter = 0;
+        foreach (long resource in focusedEconomy.localResources)
+        {
+            GameObject newResTab = Instantiate(resourceUIPrefab, topArea2.transform);
+            ResourceUI newResUI = newResTab.GetComponent<ResourceUI>();
+
+            newResUI.linkedPlanet = focusedEconomy;
+            newResUI.resType = (RES)resourceCounter;
+            newResUI.isReserve = false;
+
+            resourceCounter++;
+        }
+
     }
 }
