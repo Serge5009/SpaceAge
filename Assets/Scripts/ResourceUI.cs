@@ -4,7 +4,7 @@ using TMPro;
 public class ResourceUI : MonoBehaviour
 {
     public PlanetEconomy linkedPlanet;
-    public bool isReserve;                     //  TRUE = reserve, FALSE = local
+    public bool isComposition;                     //  TRUE = composition, FALSE = local
     public RES resType;
 
     long amount;
@@ -13,11 +13,15 @@ public class ResourceUI : MonoBehaviour
 
     void Update()
     {
-        if (isReserve)
-            amount = linkedPlanet.planetReserves[(int)resType];
+        if (isComposition)
+            amount = (long)linkedPlanet.planetComposition[(int)resType];
         else
             amount = linkedPlanet.localResources[(int)resType];
 
-        valueInUI.text = amount.ToString("F0");
+        if (isComposition)
+            valueInUI.text = amount.ToString("F2") + "%";
+        else
+            valueInUI.text = amount.ToString("F0");
+
     }
 }

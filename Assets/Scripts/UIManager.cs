@@ -84,10 +84,11 @@ public class UIManager : MonoBehaviour
         }
 
         int resourceCounter = 0;
-        foreach (long resource in focusedEconomy.planetReserves)
+        foreach (float resource in focusedEconomy.planetComposition)
         {
             if(resource <= 0)
             {
+                Debug.Log("Skipped + " + resource);
                 resourceCounter++;
                 continue;
             }
@@ -97,7 +98,7 @@ public class UIManager : MonoBehaviour
 
             newResUI.linkedPlanet = focusedEconomy;
             newResUI.resType = (RES)resourceCounter;
-            newResUI.isReserve = true;
+            newResUI.isComposition = true;
 
             resourceCounter++;
         }
@@ -110,7 +111,7 @@ public class UIManager : MonoBehaviour
 
             newResUI.linkedPlanet = focusedEconomy;
             newResUI.resType = (RES)resourceCounter;
-            newResUI.isReserve = false;
+            newResUI.isComposition = false;
 
             resourceCounter++;
         }

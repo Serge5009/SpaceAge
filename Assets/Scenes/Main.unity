@@ -1960,7 +1960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   population: 0
-  planetReserves: 
+  planetComposition: []
   localResources: 
 --- !u!1001 &621536921
 PrefabInstance:
@@ -3667,7 +3667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   population: 0
-  planetReserves: 
+  planetComposition: []
   localResources: 
 --- !u!1 &1451711578
 GameObject:
@@ -5822,6 +5822,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
+      propertyPath: planetComposition.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
       propertyPath: planetReserves.Array.data[0]
       value: 1000
       objectReference: {fileID: 0}
@@ -5849,6 +5854,41 @@ PrefabInstance:
         type: 3}
       propertyPath: planetReserves.Array.data[5]
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetComposition.Array.data[0]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetComposition.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetComposition.Array.data[2]
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetComposition.Array.data[3]
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetComposition.Array.data[4]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetComposition.Array.data[5]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetComposition.Array.data[6]
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -6043,7 +6083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   population: 0
-  planetReserves: 
+  planetComposition: []
   localResources: 
 --- !u!23 &5462330431411337869
 MeshRenderer:
