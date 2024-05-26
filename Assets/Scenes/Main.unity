@@ -542,6 +542,7 @@ MonoBehaviour:
   zoomSensitivity: 1
   zoomLevel: 3
   baseCameraPosition: {x: 0, y: 1, z: -5}
+  zoomSens: 0.2
   locationLerp: 5
   zoomLerp: 5
   rotationLerp: 1
