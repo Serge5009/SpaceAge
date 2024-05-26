@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class PlanetEconomy : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public long population;
+
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
+}
+
+public enum RES
+{
+    HYDROGEN,
+    HELIUM,
+    METALS,
+
 }

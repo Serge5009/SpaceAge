@@ -7,7 +7,6 @@ public class Planet : MonoBehaviour
     public string planetName;
     public BodyClass bodyClass;
 
-    public long population;
 
     public float radius;    //  In KM
     public decimal volume;      //  In 1kk KM^3
@@ -48,7 +47,7 @@ public class Planet : MonoBehaviour
         mass = volume * (decimal)density * 1000000;                                     //  m = V * (converted density)
         gAcc = (float)(mass / (decimal)Mathf.Pow(radius, 2) * (decimal)6.674) / 100000;          //  6.674 * 10^-11 * m * 10^12 (we store it in 1kkk T) / r^2
 
-        Debug.Log(planetName + "\tpop:\t" + population + "\nr = " + radius + "\tV = " + volume + "\nm = " + mass + "\tg = " + gAcc);
+        Debug.Log(planetName + "\tpop:\t" + GetComponent<PlanetEconomy>().population + "\nr = " + radius + "\tV = " + volume + "\nm = " + mass + "\tg = " + gAcc);
     }
 
     void Update()
