@@ -2272,6 +2272,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a6573611b926c7341bc6785947e0817f, type: 2}
   - {fileID: 11400000, guid: ba32639dd8c0fbf4ab212781fd510356, type: 2}
   - {fileID: 11400000, guid: a8aa5602b923f2047a83919726f95edb, type: 2}
+  - {fileID: 11400000, guid: 35521257d19a9294e97f434cb3b703b0, type: 2}
 --- !u!4 &680231267
 Transform:
   m_ObjectHideFlags: 0
@@ -3220,7 +3221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540.00006, y: -50}
+  m_AnchoredPosition: {x: 540, y: -50}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1156239027
@@ -3927,7 +3928,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 539.99994, y: -50}
+  m_AnchoredPosition: {x: 540, y: -50}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421826365
@@ -6159,7 +6160,7 @@ PrefabInstance:
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: localResources.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -6198,8 +6199,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
+      propertyPath: localResources.Array.data[6]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
       propertyPath: planetComposition.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -6264,6 +6270,11 @@ PrefabInstance:
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: planetComposition.Array.data[6]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
+        type: 3}
+      propertyPath: planetComposition.Array.data[7]
       value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 3000728352540689232, guid: 23226a93f1309554da02a3dcdd5b31dd,

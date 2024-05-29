@@ -69,12 +69,16 @@ public class GameManager : MonoBehaviour
 
 public enum RES
 {
+    //  Basic
     GASSES,
     WATER,
     METALS,
     CARBON,
     PRECIOUS,
     RADIOACTIVE,
+
+    //  Refined
+    ALLOYS,
 
     NUM_RES
 }
@@ -87,6 +91,8 @@ public enum BUILDING
     HARV_CARBON,
     HARV_PRECIOUS,
     HARV_RADIOACTIVE,
+
+    REF_ALLOY,
     
 
     NUM_BUILDINGS
