@@ -81,7 +81,7 @@ public enum RES
 
 public enum BUILDING
 {
-    HARV_GASS,
+    HARV_GAS,
     HARV_WATER,
 
     

@@ -104,7 +104,7 @@ public class UIManager : MonoBehaviour
         }
 
         resourceCounter = 0;
-        foreach (long resource in focusedEconomy.localResources)
+        foreach (double resource in focusedEconomy.localResources)
         {
             GameObject newResTab = Instantiate(resourceUIPrefab, topArea2.transform);
             ResourceUI newResUI = newResTab.GetComponent<ResourceUI>();

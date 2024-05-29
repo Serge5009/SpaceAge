@@ -7,7 +7,7 @@ public class ResourceUI : MonoBehaviour
     public bool isComposition;                     //  TRUE = composition, FALSE = local
     public RES resType;
 
-    long amount;
+    double amount;
 
     [SerializeField] TextMeshProUGUI valueInUI;
 

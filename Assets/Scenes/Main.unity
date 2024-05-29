@@ -1961,7 +1961,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   population: 0
   planetComposition: []
-  localResources: 
+  localResources: []
+  buildings: 
 --- !u!1001 &621536921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2246,6 +2247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac27511ddba04b41b3b8453882c9786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tickSpeed: 0.1
   focusOn: {fileID: 1261424063}
   localStar: {fileID: 450804450}
   dirLight: {fileID: 410087039}
@@ -3668,7 +3670,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   population: 0
   planetComposition: []
-  localResources: 
+  localResources: []
+  buildings: 
 --- !u!1 &1451711578
 GameObject:
   m_ObjectHideFlags: 0
@@ -5793,7 +5796,7 @@ PrefabInstance:
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: localResources.Array.data[0]
-      value: 50
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
@@ -6084,7 +6087,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   population: 0
   planetComposition: []
-  localResources: 
+  localResources: []
+  buildings: 
 --- !u!23 &5462330431411337869
 MeshRenderer:
   m_ObjectHideFlags: 0

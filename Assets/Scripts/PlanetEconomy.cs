@@ -7,7 +7,7 @@ public class PlanetEconomy : MonoBehaviour
     public long population;
 
     public List<float> planetComposition;
-    public List<long> localResources;
+    public List<double> localResources;
 
     public List<int> buildings;
 
@@ -73,7 +73,14 @@ public class PlanetEconomy : MonoBehaviour
 
     void BuildingsTick()
     {
-
+        if(buildings[(int)BUILDING.HARV_GAS] > 0)
+        {
+            localResources[(int)RES.GASSES] += 5 * buildings[(int)BUILDING.HARV_GAS] * planetComposition[(int)RES.GASSES] / 100;
+        }
+        if(buildings[(int)BUILDING.HARV_WATER] > 0)
+        {
+            localResources[(int)RES.WATER] += 5 * buildings[(int)BUILDING.HARV_WATER] * planetComposition[(int)RES.WATER] / 100;
+        }
     }
 }
 
