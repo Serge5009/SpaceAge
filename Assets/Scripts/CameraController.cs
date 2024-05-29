@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -20,6 +18,8 @@ public class CameraController : MonoBehaviour
     //Vector3 touchStartLocal;
     Vector3 lastFramePosition;
 
+    //  Settings
+    public float zoomSens = 0.5f;
 
     //  Camera data
     [SerializeField] float locationLerp;
@@ -59,7 +59,7 @@ public class CameraController : MonoBehaviour
 
             float difference = newDist - oldDist;
 
-            targetZoom += difference;
+            targetZoom -= difference * zoomSens;
         }
         else if (Input.GetMouseButton(0) && lastFramePosition != Vector3.zero)        //  While finger is down - move relatively to the start position
         {

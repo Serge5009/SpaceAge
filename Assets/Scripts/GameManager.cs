@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +17,7 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
+    public float tickSpeed = 0.1f;
 
     public GameObject focusOn;  //  Space body the camera and UI should focus on
     public GameObject localStar;
@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
     public UIManager UImanager;
 
     [SerializeField] GameObject camObject;
+
+    public List<string> resourceNames;
+    public List<Sprite> resourceIcon;
+    public List<BuildingData> allBuildings;
 
     void Start()
     {
@@ -60,4 +64,27 @@ public class GameManager : MonoBehaviour
         camObject.GetComponent<CameraController>().UpdateCamera();
     }
 
+}
+
+
+public enum RES
+{
+    GASSES,
+    WATER,
+    METALS,
+    CARBON,
+    PRECIOUS,
+    RADIOACTIVE,
+
+    NUM_RES
+}
+
+public enum BUILDING
+{
+    HARV_GAS,
+    HARV_WATER,
+
+    
+
+    NUM_BUILDINGS
 }

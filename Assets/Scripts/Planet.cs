@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,9 +6,11 @@ public class Planet : MonoBehaviour
     public string planetName;
     public BodyClass bodyClass;
 
-    public long population;
 
-    public float radius;
+    public float radius;    //  In KM
+    public decimal volume;      //  In 1kk KM^3
+    public decimal mass;        //  In 1kkk T
+    [HideInInspector] public float gAcc;
 
     public GameObject orbitAround;
     Planet parentPlanet;
@@ -17,6 +18,8 @@ public class Planet : MonoBehaviour
     public float orbitalVelocity;
 
     public List<GameObject> orbits;
+
+    public float density = 5;     //  In g/cm^3
 
     void Start()
     {
@@ -33,6 +36,17 @@ public class Planet : MonoBehaviour
                 parentPlanet.orbits.Add(gameObject);
         }
 
+
+        RecalculateStats();
+    }
+
+    void RecalculateStats()
+    {
+        volume = (decimal)Mathf.Pow(radius, 3) * (decimal)4.1888 / (decimal)1000000 ;   //  V = 4.1888 r^3
+        mass = volume * (decimal)density * 1000000;                                     //  m = V * (converted density)
+        gAcc = (float)(mass / (decimal)Mathf.Pow(radius, 2) * (decimal)6.674) / 100000;          //  6.674 * 10^-11 * m * 10^12 (we store it in 1kkk T) / r^2
+
+        Debug.Log(planetName + "\tpop:\t" + GetComponent<PlanetEconomy>().population + "\nr = " + radius + "\tV = " + volume + "\nm = " + mass + "\tg = " + gAcc);
     }
 
     void Update()
