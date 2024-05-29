@@ -91,3 +91,11 @@ public enum BUILDING
 
     NUM_BUILDINGS
 }
+
+public enum BUILD_TYPE
+{
+    HARVESTER,      //  Produces basic resources based on planet composition
+    REFINERY,       //  Uses resources to produce other resources
+
+    NUM_BUILD_TYPE
+}

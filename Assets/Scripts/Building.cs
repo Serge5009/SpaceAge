@@ -6,11 +6,39 @@ public class Building : MonoBehaviour
 
     public BuildingData buildingData;
 
+
+
     public int numberBuilt;
+
+    public BUILD_TYPE buildingType;
+    public RES generatedResource;
+    public RES consumedResource;
+    public float productionRate;
+
+    void Start()
+    {
+        buildingType = buildingData.buildingType;
+        generatedResource = buildingData.generatedResource;
+        consumedResource = buildingData.consumedResource;
+        productionRate = buildingData.productionRate;
+    }
 
     public void Tick()
     {
-        //  Calculating the amount of resources to add
-        linkedEconomy.localResources[(int)buildingData.generatedResource] += buildingData.generationRate * numberBuilt * linkedEconomy.planetComposition[(int)buildingData.generatedResource] / 100;
+        switch (buildingType)
+        {
+            case BUILD_TYPE.HARVESTER:
+                //  Calculating the amount of resources to add
+                linkedEconomy.localResources[(int)generatedResource] += productionRate * numberBuilt * linkedEconomy.planetComposition[(int)generatedResource] / 100;
+                break;
+
+            case BUILD_TYPE.REFINERY:
+
+                break;
+
+            default:
+                break;
+        }
+
     }
 }

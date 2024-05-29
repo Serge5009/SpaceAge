@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804fa2017e702604298576c18fe147fd, type: 3}
   m_Name: CarbonHarvester1
   m_EditorClassIdentifier: 
-  buildingName: Carbon Harvester 1
   buildingID: 3
+  buildingName: Carbon Harvester 1
   icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  buildingType: 0
   generatedResource: 3
-  generationRate: 5
+  consumedResource: 0
+  productionRate: 5
