@@ -150,7 +150,15 @@ public class UIManager : MonoBehaviour
                 continue;
             }
 
-            Instantiate(buildingUIPrefab, buildUIContainer.transform);
+
+            //  Create a new UI element for each building
+            GameObject newBuildingUI = Instantiate(buildingUIPrefab, buildUIContainer.transform);
+            BuildingUILine newBUILine = newBuildingUI.GetComponent<BuildingUILine>();
+
+            newBUILine.linkedEconomy = focusedEconomy;
+            newBUILine.bData = bDataToUse;
+
+            newBUILine.UpdateBuildingUI();
         }
 
     }
