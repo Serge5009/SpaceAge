@@ -33,6 +33,15 @@ public class Building : MonoBehaviour
                 break;
 
             case BUILD_TYPE.REFINERY:
+                bool canDoTick = true;
+                if (linkedEconomy.localResources[(int)consumedResource] < productionRate)
+                    canDoTick = false;
+
+                if(canDoTick)
+                {
+                    linkedEconomy.localResources[(int)generatedResource] += productionRate * numberBuilt;
+                    linkedEconomy.localResources[(int)consumedResource] -= productionRate * numberBuilt;
+                }
 
                 break;
 
