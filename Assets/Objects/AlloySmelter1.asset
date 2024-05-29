@@ -19,3 +19,4 @@ MonoBehaviour:
   generatedResource: 6
   consumedResource: 2
   productionRate: 1
+  consumptionRate: 1.5

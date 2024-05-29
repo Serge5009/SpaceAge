@@ -6180,12 +6180,12 @@ PrefabInstance:
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: localResources.Array.data[2]
-      value: 500
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}
       propertyPath: localResources.Array.data[3]
-      value: 450
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -3676837096029728529, guid: 23226a93f1309554da02a3dcdd5b31dd,
         type: 3}

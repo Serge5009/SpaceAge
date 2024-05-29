@@ -14,6 +14,7 @@ public class Building : MonoBehaviour
     public RES generatedResource;
     public RES consumedResource;
     public float productionRate;
+    public float consumptionRate;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class Building : MonoBehaviour
         generatedResource = buildingData.generatedResource;
         consumedResource = buildingData.consumedResource;
         productionRate = buildingData.productionRate;
+        consumptionRate = buildingData.consumptionRate;
     }
 
     public void Tick()
@@ -34,13 +36,13 @@ public class Building : MonoBehaviour
 
             case BUILD_TYPE.REFINERY:
                 bool canDoTick = true;
-                if (linkedEconomy.localResources[(int)consumedResource] < productionRate)
+                if (linkedEconomy.localResources[(int)consumedResource] < consumptionRate * numberBuilt)
                     canDoTick = false;
 
                 if(canDoTick)
                 {
                     linkedEconomy.localResources[(int)generatedResource] += productionRate * numberBuilt;
-                    linkedEconomy.localResources[(int)consumedResource] -= productionRate * numberBuilt;
+                    linkedEconomy.localResources[(int)consumedResource] -= consumptionRate * numberBuilt;
                 }
 
                 break;

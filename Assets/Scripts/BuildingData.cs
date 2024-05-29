@@ -12,5 +12,6 @@ public class BuildingData : ScriptableObject
     public RES generatedResource;
     public RES consumedResource;
     public float productionRate;
+    public float consumptionRate;
 
 }
