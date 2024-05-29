@@ -9,13 +9,17 @@ public class PlanetEconomy : MonoBehaviour
     public List<float> planetComposition;
     public List<long> localResources;
 
+    public List<int> buildings;
+
     float tickSpeed;
     float tickTimer;
 
     void Start()
     {
-        RebalanceComposition();
         tickSpeed = GameManager.gameManager.tickSpeed;  //  Fetching the tick speed
+
+        RebalanceComposition(); 
+        GenerateBuildingsList();
     }
 
     void Update()
@@ -51,6 +55,19 @@ public class PlanetEconomy : MonoBehaviour
         for (int i = 0; i < planetComposition.Count; i++)
         {
             planetComposition[i] /= currentSum;
+        }
+    }
+
+    void GenerateBuildingsList()
+    {
+        //  TO DO:  change to loading from save
+
+        //  For now just creates an empty list
+
+        buildings = new();
+        for (int i = 0; i < (int)BUILDING.NUM_BUILDINGS; i++)
+        {
+            buildings.Add(0);
         }
     }
 
