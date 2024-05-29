@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] TMP_Dropdown forwardSelector;
     [SerializeField] GameObject infoPanel;
     [SerializeField] GameObject resourceUIPrefab;
+    [SerializeField] GameObject buildingUIPrefab;
     [SerializeField] GameObject buildUIContainer;
 
     [SerializeField] GameObject topArea1;
@@ -117,6 +118,8 @@ public class UIManager : MonoBehaviour
             resourceCounter++;
         }
 
+
+        PopulateBuildingsUI();
     }
 
     void PopulateBuildingsUI()
@@ -126,8 +129,12 @@ public class UIManager : MonoBehaviour
             Destroy(oldBuilding.gameObject);
         }
 
+
+        //  For every type of BUILDING enum
         for (int i = 0; i < (int)BUILDING.NUM_BUILDINGS; i++)
         {
+
+            //  Find respective BuildingData in GameManager
             BuildingData bDataToUse = null;
             foreach (BuildingData bData in GameManager.gameManager.allBuildings)
             {
@@ -137,13 +144,13 @@ public class UIManager : MonoBehaviour
                 if ((int)bData.buildingID == i)
                     bDataToUse = bData;
             }
-            if (!bDataToUse)
+            if (!bDataToUse)    //  If failed - skip
             {
                 Debug.LogWarning("UIManager failed to find proper Building Data for ID:" + i);
                 continue;
             }
 
-
+            Instantiate(buildingUIPrefab, buildUIContainer.transform);
         }
 
     }

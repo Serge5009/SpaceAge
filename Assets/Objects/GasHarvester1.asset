@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804fa2017e702604298576c18fe147fd, type: 3}
   m_Name: GasHarvester1
   m_EditorClassIdentifier: 
-  buildingName: 
-  icon: {fileID: 0}
+  buildingName: Gas Harvester 1
+  buildingID: 0
+  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   generatedResource: 0
-  generationRate: 0
+  generationRate: 5

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804fa2017e702604298576c18fe147fd, type: 3}
   m_Name: WaterHarvester1
   m_EditorClassIdentifier: 
-  buildingName: 
-  icon: {fileID: 0}
-  generatedResource: 0
-  generationRate: 0
+  buildingName: Water Pump 1
+  buildingID: 1
+  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  generatedResource: 1
+  generationRate: 5
