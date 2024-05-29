@@ -9,14 +9,27 @@ public class PlanetEconomy : MonoBehaviour
     public List<float> planetComposition;
     public List<long> localResources;
 
+    float tickSpeed;
+    float tickTimer;
+
     void Start()
     {
         RebalanceComposition();
+        tickSpeed = GameManager.gameManager.tickSpeed;  //  Fetching the tick speed
     }
 
     void Update()
     {
-        
+
+        //  Tick timer
+        tickTimer += Time.deltaTime;
+        if(tickTimer >= tickSpeed)
+        {
+            tickTimer -= tickSpeed;
+            BuildingsTick();
+        }
+        if (tickTimer > 1)
+            Debug.LogWarning(gameObject + " - Economy tick is " + tickTimer.ToString("F2") + "s behind!");
     }
 
     void RebalanceComposition()
@@ -39,6 +52,11 @@ public class PlanetEconomy : MonoBehaviour
         {
             planetComposition[i] /= currentSum;
         }
+    }
+
+    void BuildingsTick()
+    {
+
     }
 }
 

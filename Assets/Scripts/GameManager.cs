@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
             return _instance;
         }
     }
+    public float tickSpeed = 0.1f;
 
     public GameObject focusOn;  //  Space body the camera and UI should focus on
     public GameObject localStar;
@@ -76,4 +77,14 @@ public enum RES
     RADIOACTIVE,
 
     NUM_RES
+}
+
+public enum BUILDING
+{
+    HARV_GASS,
+    HARV_WATER,
+
+    
+
+    NUM_BUILDINGS
 }
