@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
 
     public List<string> resourceNames;
     public List<Sprite> resourceIcon;
+    public List<BuildingData> allBuildings;
 
     void Start()
     {

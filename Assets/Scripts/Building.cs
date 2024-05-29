@@ -8,13 +8,16 @@ public class Building : MonoBehaviour
 
     BuildingData buildingData;
 
+    public int numberBuilt;
+
     void Start()
     {
         
     }
 
-    void Update()
+    public void Tick()
     {
-        
+        //  Calculating the amount of resources to add
+        linkedEconomy.localResources[(int)buildingData.generatedResource] += buildingData.generationRate * numberBuilt * linkedEconomy.planetComposition[(int)buildingData.generatedResource];
     }
 }
