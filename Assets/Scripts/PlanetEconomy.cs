@@ -81,6 +81,11 @@ public class PlanetEconomy : MonoBehaviour
         //{
         //    localResources[(int)RES.WATER] += 5 * buildings[(int)BUILDING.HARV_WATER] * planetComposition[(int)RES.WATER] / 100;
         //}
+        foreach (Building i in buildings)
+        {
+            i.Tick();
+
+        }
     }
 
     public void TryToBuild(BuildingData buildingToBuild)
@@ -91,7 +96,7 @@ public class PlanetEconomy : MonoBehaviour
 
         Building addingTo = null;
         //  Looking thru all attached Building objects to see if we have this type
-        foreach (Building toCheck in GetComponents<Building>()) 
+        foreach (Building toCheck in buildings) 
         {
             if (addingTo)
                 continue;
@@ -107,6 +112,8 @@ public class PlanetEconomy : MonoBehaviour
             addingTo.linkedEconomy = this;
             addingTo.buildingData = buildingToBuild;
             addingTo.numberBuilt = 0;
+
+            buildings.Add(addingTo);        //  Add new building to the list
         }
 
 
