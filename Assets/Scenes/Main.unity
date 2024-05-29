@@ -1962,7 +1962,7 @@ MonoBehaviour:
   population: 0
   planetComposition: []
   localResources: []
-  buildings: 
+  buildings: []
 --- !u!1001 &621536921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2258,6 +2258,10 @@ MonoBehaviour:
   allBuildings:
   - {fileID: 11400000, guid: 823e1bf2a78e40b41a9fdea184586dc9, type: 2}
   - {fileID: 11400000, guid: 5c7bf30200eecba489a45bf2d4b47c62, type: 2}
+  - {fileID: 11400000, guid: 6be701f1c18d63c43961ac884fa65869, type: 2}
+  - {fileID: 11400000, guid: a6573611b926c7341bc6785947e0817f, type: 2}
+  - {fileID: 11400000, guid: ba32639dd8c0fbf4ab212781fd510356, type: 2}
+  - {fileID: 11400000, guid: a8aa5602b923f2047a83919726f95edb, type: 2}
 --- !u!4 &680231267
 Transform:
   m_ObjectHideFlags: 0
@@ -3736,7 +3740,7 @@ MonoBehaviour:
   population: 0
   planetComposition: []
   localResources: []
-  buildings: 
+  buildings: []
 --- !u!1 &1451711578
 GameObject:
   m_ObjectHideFlags: 0
@@ -6157,7 +6161,7 @@ MonoBehaviour:
   population: 0
   planetComposition: []
   localResources: []
-  buildings: 
+  buildings: []
 --- !u!23 &5462330431411337869
 MeshRenderer:
   m_ObjectHideFlags: 0

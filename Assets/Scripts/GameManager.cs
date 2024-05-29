@@ -83,7 +83,10 @@ public enum BUILDING
 {
     HARV_GAS,
     HARV_WATER,
-
+    HARV_METAL,
+    HARV_CARBON,
+    HARV_PRECIOUS,
+    HARV_RADIOACTIVE,
     
 
     NUM_BUILDINGS
