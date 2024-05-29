@@ -9,7 +9,7 @@ public class PlanetEconomy : MonoBehaviour
     public List<float> planetComposition;
     public List<double> localResources;
 
-    public List<int> buildings;
+    public List<Building> buildings;
 
     float tickSpeed;
     float tickTimer;
@@ -64,23 +64,54 @@ public class PlanetEconomy : MonoBehaviour
 
         //  For now just creates an empty list
 
-        buildings = new();
-        for (int i = 0; i < (int)BUILDING.NUM_BUILDINGS; i++)
-        {
-            buildings.Add(0);
-        }
+        //buildings = new();
+        //for (int i = 0; i < (int)BUILDING.NUM_BUILDINGS; i++)
+        //{
+        //    buildings.Add(0);
+        //}
     }
 
     void BuildingsTick()
     {
-        if(buildings[(int)BUILDING.HARV_GAS] > 0)
+        //if(buildings[(int)BUILDING.HARV_GAS] > 0)
+        //{
+        //    localResources[(int)RES.GASSES] += 5 * buildings[(int)BUILDING.HARV_GAS] * planetComposition[(int)RES.GASSES] / 100;
+        //}
+        //if(buildings[(int)BUILDING.HARV_WATER] > 0)
+        //{
+        //    localResources[(int)RES.WATER] += 5 * buildings[(int)BUILDING.HARV_WATER] * planetComposition[(int)RES.WATER] / 100;
+        //}
+    }
+
+    public void TryToBuild(BuildingData buildingToBuild)
+    {
+        //  TO DO: add costs
+
+        //  Adding a building with this data
+
+        Building addingTo = null;
+        //  Looking thru all attached Building objects to see if we have this type
+        foreach (Building toCheck in GetComponents<Building>()) 
         {
-            localResources[(int)RES.GASSES] += 5 * buildings[(int)BUILDING.HARV_GAS] * planetComposition[(int)RES.GASSES] / 100;
+            if (addingTo)
+                continue;
+
+            if (toCheck.buildingData == buildingToBuild)
+                addingTo = toCheck;
         }
-        if(buildings[(int)BUILDING.HARV_WATER] > 0)
+
+        //  If nopthing found - create a new one
+        if(!addingTo)
         {
-            localResources[(int)RES.WATER] += 5 * buildings[(int)BUILDING.HARV_WATER] * planetComposition[(int)RES.WATER] / 100;
+            addingTo = gameObject.AddComponent<Building>();
+            addingTo.linkedEconomy = this;
+            addingTo.buildingData = buildingToBuild;
+            addingTo.numberBuilt = 0;
         }
+
+
+        //  Adding +1
+        addingTo.numberBuilt++;
     }
 }
 

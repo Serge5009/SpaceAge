@@ -23,6 +23,6 @@ public class BuildingUILine : MonoBehaviour
 
     public void OnBuildClick()
     {
-
+        linkedEconomy.TryToBuild(bData);
     }
 }

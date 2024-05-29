@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-    PlanetEconomy linkedEconomy;
+    public PlanetEconomy linkedEconomy;
 
-    BuildingData buildingData;
+    public BuildingData buildingData;
 
     public int numberBuilt;
 
