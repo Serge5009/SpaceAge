@@ -69,12 +69,16 @@ public class GameManager : MonoBehaviour
 
 public enum RES
 {
+    //  Basic
     GASSES,
     WATER,
     METALS,
     CARBON,
     PRECIOUS,
     RADIOACTIVE,
+
+    //  Refined
+    ALLOYS,
 
     NUM_RES
 }
@@ -83,8 +87,21 @@ public enum BUILDING
 {
     HARV_GAS,
     HARV_WATER,
+    HARV_METAL,
+    HARV_CARBON,
+    HARV_PRECIOUS,
+    HARV_RADIOACTIVE,
 
+    REF_ALLOY,
     
 
     NUM_BUILDINGS
+}
+
+public enum BUILD_TYPE
+{
+    HARVESTER,      //  Produces basic resources based on planet composition
+    REFINERY,       //  Uses resources to produce other resources
+
+    NUM_BUILD_TYPE
 }

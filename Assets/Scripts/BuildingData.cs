@@ -3,12 +3,15 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Building", menuName = "Economy/Building")]
 public class BuildingData : ScriptableObject
 {
-    public string buildingName;
     public BUILDING buildingID;
 
+    public string buildingName;
     public Sprite icon;
 
+    public BUILD_TYPE buildingType;
     public RES generatedResource;
-    public float generationRate;
+    public RES consumedResource;
+    public float productionRate;
+    public float consumptionRate;
 
 }
