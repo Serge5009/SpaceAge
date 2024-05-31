@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4013fb9923f92e649a1972781fca5ae0, type: 3}
   m_Name: Metals
   m_EditorClassIdentifier: 
-  resID: 0
-  resName: 
-  resImage: {fileID: 0}
+  resID: 2
+  resName: Metals
+  resImage: {fileID: 21300000, guid: 9c19ca9605ceba64896dcacb4022d5b3, type: 3}
   isBasicRes: 1

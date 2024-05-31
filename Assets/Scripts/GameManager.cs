@@ -27,8 +27,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject camObject;
 
-    public List<string> resourceNames;
-    public List<Sprite> resourceIcon;
+    public List<ResourceData> allResources;
     public List<BuildingData> allBuildings;
 
     void Start()

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resID: 6
   resName: Alloys
-  resImage: {fileID: 0}
+  resImage: {fileID: 21300000, guid: 587d2aac875147944a0516497db63426, type: 3}
   isBasicRes: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4013fb9923f92e649a1972781fca5ae0, type: 3}
   m_Name: Precious
   m_EditorClassIdentifier: 
-  resID: 0
-  resName: 
-  resImage: {fileID: 0}
+  resID: 4
+  resName: Precious
+  resImage: {fileID: 21300000, guid: af21d6d527d0b6d4f9df04912f89f9b9, type: 3}
   isBasicRes: 1

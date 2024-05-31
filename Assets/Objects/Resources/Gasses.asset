@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Gasses
   m_EditorClassIdentifier: 
   resID: 0
-  resName: 
-  resImage: {fileID: 0}
+  resName: Gasses
+  resImage: {fileID: 21300000, guid: f61e8646a29c3eb4dac0d553fbee23d3, type: 3}
   isBasicRes: 1

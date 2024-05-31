@@ -2263,8 +2263,14 @@ MonoBehaviour:
   dirLight: {fileID: 410087039}
   UImanager: {fileID: 1782554059}
   camObject: {fileID: 197677242}
-  resourceNames: []
-  resourceIcon: []
+  allResources:
+  - {fileID: 11400000, guid: 459b92ad1e1c1fc45866055249fea60d, type: 2}
+  - {fileID: 11400000, guid: 08d0517c7450b2c48a7217f721023897, type: 2}
+  - {fileID: 11400000, guid: 6487a48e7e3337e4b95a50f689e66587, type: 2}
+  - {fileID: 11400000, guid: 779f65b72ac59194ca33e1ca7392eae2, type: 2}
+  - {fileID: 11400000, guid: 339bf86c862715545b795e5307fa38d0, type: 2}
+  - {fileID: 11400000, guid: c0cc7ced2882e9e4282180582f18f276, type: 2}
+  - {fileID: 11400000, guid: f39af8ba3fdee3d47a9bc7fe873378bf, type: 2}
   allBuildings:
   - {fileID: 11400000, guid: 823e1bf2a78e40b41a9fdea184586dc9, type: 2}
   - {fileID: 11400000, guid: 5c7bf30200eecba489a45bf2d4b47c62, type: 2}
@@ -3221,7 +3227,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: -50}
+  m_AnchoredPosition: {x: 539.9997, y: -50}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1156239027
@@ -3928,7 +3934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: -50}
+  m_AnchoredPosition: {x: 539.9997, y: -50}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421826365

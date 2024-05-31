@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4013fb9923f92e649a1972781fca5ae0, type: 3}
   m_Name: Radioactive
   m_EditorClassIdentifier: 
-  resID: 0
-  resName: 
-  resImage: {fileID: 0}
+  resID: 5
+  resName: Radioactive
+  resImage: {fileID: 21300000, guid: c0443496f7e392040882f81f56735720, type: 3}
   isBasicRes: 1
